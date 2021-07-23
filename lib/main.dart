@@ -108,12 +108,14 @@ class _GuildSmithState extends State<GuildSmith>
                   _currentIndex = index;
                 });
               },
-              items: allDestinations.map((Destination destination) {
-                return BottomNavigationBarItem(
-                    icon: Icon(destination.icon),
-                    backgroundColor: destination.color,
-                    label: destination.title);
-              }).toList(),
+              items: allDestinations.map(
+                (Destination destination) {
+                  return BottomNavigationBarItem(
+                      icon: Icon(destination.icon),
+                      backgroundColor: destination.color,
+                      label: destination.title);
+                },
+              ).toList(),
             ),
           ),
         ),

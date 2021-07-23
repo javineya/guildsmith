@@ -16,8 +16,7 @@ class RootPage extends StatelessWidget {
       backgroundColor: destination.color[100],
       body: SizedBox.expand(
         child: Center(
-          // TODO: Add pages to this child for game functionality
-          child: Text(destination.title),
+          child: destination.screen,
         ),
       ),
     );

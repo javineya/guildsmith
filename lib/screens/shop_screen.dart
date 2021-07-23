@@ -10,12 +10,6 @@ class ShopScreen extends StatefulWidget {
 class _ShopScreenState extends State<ShopScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('GuildSmith'),
-      ),
-      body: SafeArea(child: Center(child: Text('Kingdom!'))),
-    );
-    ;
+    return Center(child: Text('Shop!'));
   }
 }

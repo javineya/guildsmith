@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class KingdomScreen extends StatefulWidget {
+  const KingdomScreen({Key? key}) : super(key: key);
   @override
   _KingdomScreenState createState() => _KingdomScreenState();
 }
@@ -8,11 +9,6 @@ class KingdomScreen extends StatefulWidget {
 class _KingdomScreenState extends State<KingdomScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('GuildSmith'),
-      ),
-      body: SafeArea(child: Center(child: Text('Kingdom!'))),
-    );
+    return Center(child: Text('Kingdom!'));
   }
 }

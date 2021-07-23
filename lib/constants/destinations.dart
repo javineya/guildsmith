@@ -1,19 +1,22 @@
 import 'package:flutter/material.dart';
+import '../screens/hero_screen.dart';
+import '../screens/kingdom_screen.dart';
+import '../screens/shop_screen.dart';
+import '../screens/smithy_screen.dart';
 
 class Destination {
-  const Destination(this.index, this.title, this.icon, this.color);
+  const Destination(this.index, this.title, this.icon, this.color, this.screen);
   final int index;
   final String title;
   // TODO: Change the Icon to Image once those are created.
   final IconData icon;
   final MaterialColor color;
-  // TODO: Add final for different screens
+  final Widget screen;
 }
 
 const List<Destination> allDestinations = <Destination>[
-  // TODO: Add screens
-  Destination(0, 'Shop', Icons.shopping_cart, Colors.brown),
-  Destination(1, 'Kingdom', Icons.map, Colors.cyan),
-  Destination(2, 'Smithy', Icons.shield_rounded, Colors.orange),
-  Destination(3, 'Hero', Icons.car_rental, Colors.blue)
+  Destination(0, 'Shop', Icons.shopping_cart, Colors.brown, ShopScreen()),
+  Destination(1, 'Kingdom', Icons.map, Colors.cyan, KingdomScreen()),
+  Destination(2, 'Smithy', Icons.shield_rounded, Colors.orange, SmithyScreen()),
+  Destination(3, 'Hero', Icons.car_rental, Colors.blue, HeroScreen())
 ];
