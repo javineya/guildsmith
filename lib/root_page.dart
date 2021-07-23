@@ -10,10 +10,10 @@ class RootPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(destination.title),
+        title: Center(child: Text(destination.title)),
         backgroundColor: destination.color,
       ),
-      backgroundColor: destination.color[50],
+      backgroundColor: destination.color[100],
       body: SizedBox.expand(
         child: Center(
           // TODO: Add pages to this child for game functionality

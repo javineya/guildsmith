@@ -33,7 +33,7 @@ android {
     }
 
     defaultConfig {
-        // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
+        // TODO: Think of a company name, add it here.
         applicationId "johnny.vineyard.guildsmith"
         minSdkVersion 16
         targetSdkVersion 30
