@@ -2,15 +2,21 @@
 
 A puzzle-based management game.
 
-## Getting Started
+## DEVELOPER DIARY
+Started with a dream of blending my three favorite mobile game series:
+Rebuild (1 and 3) - the community and base management, encroaching enemies
+Puzzle Forge I and II - puzzle crafting mechanic
+Merchant - outfit heroes with gear, send them on missions; no direct control
 
-This project is a starting point for a Flutter application.
+Loved the simple UI from Merchant. Found this article on page changes:
 
-A few resources to get you started if this is your first Flutter project:
+https://medium.com/flutter/getting-to-the-bottom-of-navigation-in-flutter-b3e440b9386
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+Thanks to Hans Muller. Used this code as the foundation of my UI.
+Gutted the things I didn't need.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+TODO: LEARN ABOUT PERSISTING DATA BETWEEN PAGE CHANGES + APP CLOSURE
+GlobalKey?
+shared_preferences package? use this for local app settings (dark mode)
+--how much data is "a lot"? 
+--look into 'hive' for game storage
